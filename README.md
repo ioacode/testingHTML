@@ -1,4 +1,5 @@
 # testingHTML
 
 
-![alt text](https://github.com/sdik007/introzApp/blob/master/introzApp/Assets.xcassets/example.imageset/test.png)
+![alt text](https://github.com/ioacode/testingHTML/blob/master/Testinghtml/Assets.xcassets/test.imageset/test.png)
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Testinghtml" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pCM-bG-hjO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpA-HS-S5b">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <subviews>
+                                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZ1-E1-gDn">
+                                                <rect key="frame" x="16" y="16" width="382" height="786"/>
+                                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <wkWebViewConfiguration key="configuration">
+                                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                    <wkPreferences key="preferences"/>
+                                                </wkWebViewConfiguration>
+                                            </wkWebView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="aZ1-E1-gDn" secondAttribute="bottom" constant="16" id="7hT-KH-c94"/>
+                                            <constraint firstItem="aZ1-E1-gDn" firstAttribute="top" secondItem="bpA-HS-S5b" secondAttribute="top" constant="16" id="BTg-su-o1f"/>
+                                            <constraint firstItem="aZ1-E1-gDn" firstAttribute="leading" secondItem="bpA-HS-S5b" secondAttribute="leading" constant="16" id="XG3-ln-wfm"/>
+                                            <constraint firstAttribute="trailing" secondItem="aZ1-E1-gDn" secondAttribute="trailing" constant="16" id="tyB-qB-UIe"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="bpA-HS-S5b" secondAttribute="trailing" id="2FG-gO-48Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="bpA-HS-S5b" secondAttribute="bottom" id="2KP-ve-LP6"/>
+                                    <constraint firstItem="bpA-HS-S5b" firstAttribute="leading" secondItem="pCM-bG-hjO" secondAttribute="leading" id="A3u-bU-BTG"/>
+                                    <constraint firstItem="bpA-HS-S5b" firstAttribute="top" secondItem="pCM-bG-hjO" secondAttribute="top" id="oeC-xG-T48"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bpA-HS-S5b" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="2Aq-yM-2IK"/>
+                            <constraint firstItem="pCM-bG-hjO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JEv-uz-dW3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pCM-bG-hjO" secondAttribute="bottom" id="LJt-jH-R1V"/>
+                            <constraint firstItem="pCM-bG-hjO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TtE-BR-Ii4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pCM-bG-hjO" secondAttribute="trailing" id="dMu-7V-EdV"/>
+                            <constraint firstItem="bpA-HS-S5b" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="oWc-nl-60h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="aZ1-E1-gDn" id="Rkp-uy-w2j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92.753623188405811" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+</document>

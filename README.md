@@ -1,6 +1,6 @@
 # testingHTML
 
-Custom WiewKit seperti perubahan font family, ukuran font, color font.
+Custom WebView seperti perubahan font family, ukuran font, color font.
 Memberikan Link dan serta memberi effect animation untuk Kata  sehingga bisa bergerak.
 contohnya seperti gambar berikut :
 
